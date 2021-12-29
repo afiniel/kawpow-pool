@@ -42,10 +42,12 @@ Highly Efficient mining pool for Coins based on KawPoW algo!
     usermod -aG sudo pool
     su - pool
     sudo apt install wget
-    wget https://github.com/RavenProject/Ravencoin/releases/download/v4.3.1/raven-4.3.1.0-x86_64-linux-gnu.tar.gz
-    tar -xf raven-4.3.1.0-x86_64-linux-gnu.tar.gz
-    rm raven*gz
-    cd raven-4.3.1.0/bin
+    sudo apt install unzip
+    wget https://github.com/RavenProject/Ravencoin/releases/download/v4.3.2.1/raven-4.3.2.1-x86_64-linux-gnu.zip
+    unzip raven-4.3.2.1-x86_64-linux-gnu.zip
+    cd linux
+    tar -xf raven-4.3.2.1-x86_64-linux-gnu.tar.gz
+    cd raven-4.3.2.1/bin
     mkdir -p ~/.raven/
     touch ~/.raven/raven.conf
     echo "rpcuser=user1" > ~/.raven/raven.conf
